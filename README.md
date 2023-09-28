@@ -15,6 +15,9 @@ For running this progect you need:
 2. docker-compose build
 3. docker-compose up
 4. Run terminal_client.py in Pycharm or in command shell: python terminal_client.py
+
    Terminal log will recive any message, and send it to master. Have 3 keywords: list/list master, list sub1, list sub2 - makes GET request to coresponding node, to list saved messages of the node.
+   
    Logs of all three nodes can be seen in a terminal, where was executed docker-compose file. Logs of each separeted node can be viewed in Desktop or by running:
+   
    docker logs main/node1/node2.
