@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+  master:
+    build: .
+    ports:
+      - "8000:8000"
+    container_name: master
+    command: python -u ./server.py
+      - master
+    networks:
+      - master
+  sub1:
+    build: SubServ1/
+    ports:
+      - "8080:8080"
+    container_name: node1
+    command: python -u ./sub_server1.py
+    depends_on:
+      - master
+    networks:
+      - master
+
+  sub2:
+    build: SubServ2/
+    ports:
+      - "8090:8090"
+    container_name: node2
+    command: python -u ./sub_server2.py
+    depends_on:
+      - master
+    networks:
+      - master
+
+networks:
+  master:
