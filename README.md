@@ -29,3 +29,24 @@ For running this progect you need:
    Logs of all three nodes can be seen in a terminal, where was executed docker-compose file. Logs of each separeted node can be viewed in Desktop or by running:
    
    docker logs main/node1/node2.
+
+   In Docker desktop it works like this:
+   
+   ![image](https://github.com/OlexiiHryhorashyk/ReplicatedLog/assets/58079096/e01511fb-6c2b-41f2-a0d8-ab14f3e71438)
+   
+   In terminal-client.py console:
+   
+   ![image](https://github.com/OlexiiHryhorashyk/ReplicatedLog/assets/58079096/36f9d63a-0319-4eaa-98cd-5e79dab15c60)
+   
+   In nodes logs:
+   
+   ![image](https://github.com/OlexiiHryhorashyk/ReplicatedLog/assets/58079096/3c277bd2-9b48-49ab-85fc-621ac3dd4e6a)
+   
+   In Docker Desktop logs for each node:
+   
+   ![image](https://github.com/OlexiiHryhorashyk/ReplicatedLog/assets/58079096/3bf7e3c1-2dd4-4e3a-ae03-55a6c6f9fc08)
+   
+
+
+
+ 

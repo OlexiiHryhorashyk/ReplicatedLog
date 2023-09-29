@@ -26,6 +26,11 @@ class HttpHandler(BaseHTTPRequestHandler):
         self.end_headers()
         content_length = int(self.headers['Content-Length'])
         post_data = self.rfile.read(content_length)
+<<<<<<< HEAD
+=======
+        message = "Message recived:"+bytes.decode(post_data)
+        self.wfile.write(bytes(message, "utf8"))
+>>>>>>> a47acdeffe58184c45f5e415922e622a61d17d92
         msg = literal_eval(post_data.decode('utf-8'))
         print("POST handler <- Message recived:", msg)
         # Saving received message and replicating to secondary nodes
@@ -38,8 +43,11 @@ class HttpHandler(BaseHTTPRequestHandler):
             thread = Thread(target=self.send_to_sub, args=(url[i], msg))
             thread.run()
             thread_list.append(thread)
+<<<<<<< HEAD
         message = "Message recived:"+bytes.decode(post_data)
         self.wfile.write(bytes(message, "utf8"))  # blocking client until response from secondary nodes
+=======
+>>>>>>> a47acdeffe58184c45f5e415922e622a61d17d92
 
     def do_GET(self):  # GET request handler
         self.send_response(200)
