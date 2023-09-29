@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15b59ed2-c4f7-4ea3-8708-4325b6be042e" name="Changes" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/MasterNode_Docker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SubServ1/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SubServ1/sub_server1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SubServ2/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SubServ2/sub_server2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terminal_client.py" afterDir="false" />
-=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> a47acdeffe58184c45f5e415922e622a61d17d92
+      <change beforePath="$PROJECT_DIR$/SubServ1/sub_server1.py" beforeDir="false" afterPath="$PROJECT_DIR$/SubServ1/sub_server1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubServ2/sub_server2.py" beforeDir="false" afterPath="$PROJECT_DIR$/SubServ2/sub_server2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/terminal_client.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,16 +33,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.server">
-=======
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RunManager" selected="Python.terminal_client">
->>>>>>> a47acdeffe58184c45f5e415922e622a61d17d92
     <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MasterNode_Docker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,6 +51,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sub_server1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MasterNode_Docker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SubServ1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SubServ1/sub_server1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sub_server2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MasterNode_Docker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SubServ2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SubServ2/sub_server2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,13 +127,10 @@
     </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
         <item itemvalue="Python.server" />
+        <item itemvalue="Python.sub_server1" />
+        <item itemvalue="Python.sub_server2" />
         <item itemvalue="Python.terminal_client" />
-=======
-        <item itemvalue="Python.terminal_client" />
-        <item itemvalue="Python.server" />
->>>>>>> a47acdeffe58184c45f5e415922e622a61d17d92
       </list>
     </recent_temporary>
   </component>
@@ -135,15 +155,10 @@
       <workItem from="1695655401459" duration="1000" />
       <workItem from="1695828138451" duration="4117000" />
       <workItem from="1695888558708" duration="6143000" />
-<<<<<<< HEAD
       <workItem from="1695896629096" duration="356000" />
       <workItem from="1695897499224" duration="94000" />
       <workItem from="1695900130217" duration="3048000" />
-      <workItem from="1695979282870" duration="1534000" />
-=======
-      <workItem from="1695896629096" duration="804000" />
-      <workItem from="1695897599935" duration="2174000" />
->>>>>>> a47acdeffe58184c45f5e415922e622a61d17d92
+      <workItem from="1695979282870" duration="11934000" />
     </task>
     <servers />
   </component>
@@ -152,11 +167,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MasterNode_Docker$terminal_client.coverage" NAME="terminal_client Coverage Results" MODIFIED="1695893593697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ReplicatedLog$sub_server1.coverage" NAME="sub_server1 Coverage Results" MODIFIED="1696005515457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SubServ1" />
+    <SUITE FILE_PATH="coverage/ReplicatedLog$sub_server2.coverage" NAME="sub_server2 Coverage Results" MODIFIED="1696005503709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SubServ2" />
     <SUITE FILE_PATH="coverage/MasterNode_Docker$server.coverage" NAME="server Coverage Results" MODIFIED="1695891159185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-<<<<<<< HEAD
-    <SUITE FILE_PATH="coverage/ReplicatedLog$terminal_client.coverage" NAME="terminal_client Coverage Results" MODIFIED="1695979645236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ReplicatedLog$server.coverage" NAME="server Coverage Results" MODIFIED="1695979770697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-=======
->>>>>>> a47acdeffe58184c45f5e415922e622a61d17d92
+    <SUITE FILE_PATH="coverage/ReplicatedLog$terminal_client.coverage" NAME="terminal_client Coverage Results" MODIFIED="1696000623461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ReplicatedLog$server.coverage" NAME="server Coverage Results" MODIFIED="1696005718774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

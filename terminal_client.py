@@ -31,9 +31,10 @@ while message != "stop":
     else:
         try:
             start = time.time()
+            message = {"message": message}
             x = requests.post(url, json=message)
             print(x.text)
             end = time.time()
-            #print("Execution time:", round(end - start, 2), "seconds!")
+            # print("Execution time:", round(end - start, 2), "seconds!")
         except requests.exceptions.ConnectionError:
             print("No connection to the server!")

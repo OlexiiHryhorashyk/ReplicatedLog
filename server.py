@@ -1,7 +1,7 @@
-from http.server import BaseHTTPRequestHandler
-from http.server import HTTPServer
+from http.server import BaseHTTPRequestHandler, HTTPServer
 from ast import literal_eval
 from threading import Thread
+from socketserver import ThreadingMixIn
 import requests
 
 
@@ -14,8 +14,9 @@ url = [f'http://node1:{ports[0]}', f'http://node2:{ports[1]}']  # for docker con
 class HttpHandler(BaseHTTPRequestHandler):
     def send_to_sub(self, url_addres, msg):  # attempt to send received message to secondary by url
         try:
+            msg = {'message': msg}
             requests.post(url_addres, json=msg)
-            print("POST request -> Message send to "+str(url.index(url_addres)+1)+" subsequent server - "+msg)
+            print("POST request -> Message send to "+str(url.index(url_addres)+1)+" subsequent server - "+msg['message'])
         except requests.exceptions.ConnectionError:
             print("POST ERROR -> No connection to the "+str(url.index(url_addres)+1)+"sub server! Message not passed!")
         return
@@ -26,11 +27,6 @@ class HttpHandler(BaseHTTPRequestHandler):
         self.end_headers()
         content_length = int(self.headers['Content-Length'])
         post_data = self.rfile.read(content_length)
-<<<<<<< HEAD
-=======
-        message = "Message recived:"+bytes.decode(post_data)
-        self.wfile.write(bytes(message, "utf8"))
->>>>>>> a47acdeffe58184c45f5e415922e622a61d17d92
         msg = literal_eval(post_data.decode('utf-8'))
         print("POST handler <- Message recived:", msg)
         # Saving received message and replicating to secondary nodes
@@ -43,11 +39,9 @@ class HttpHandler(BaseHTTPRequestHandler):
             thread = Thread(target=self.send_to_sub, args=(url[i], msg))
             thread.run()
             thread_list.append(thread)
-<<<<<<< HEAD
+        # time.sleep(5) # stop for multithreading testing
         message = "Message recived:"+bytes.decode(post_data)
         self.wfile.write(bytes(message, "utf8"))  # blocking client until response from secondary nodes
-=======
->>>>>>> a47acdeffe58184c45f5e415922e622a61d17d92
 
     def do_GET(self):  # GET request handler
         self.send_response(200)
@@ -61,6 +55,10 @@ class HttpHandler(BaseHTTPRequestHandler):
         self.wfile.write(bytes(str_messages, 'utf8'))
 
 
+class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
+    """Handle requests in a separate thread."""
+
+
 def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
     server_address = ('', 8000)
     httpd = server_class(server_address, handler_class)
@@ -72,4 +70,5 @@ def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
         httpd.server_close()
 
 
-run(handler_class=HttpHandler)
+# using class ThreadedHTTPServer instead of HTTPServer for multithreading
+run(server_class=ThreadedHTTPServer, handler_class=HttpHandler)
